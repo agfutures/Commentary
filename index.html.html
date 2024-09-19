@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Corn Market Analysis Report</title>
+<style>
+        .container {
+            display: flex;
+            flex-wrap: nowrap; /* Prevent wrapping */
+        }
+        .content {
+            flex: 2;
+            padding: 20px;
+            margin-right: 520px; /* Add margin to avoid overlap */
+
+        }
+        .content h1, h2, .content p, .content ul, .content li {
+            font-size: 1rem; /* Ensure all tags have the same font size */
+        }
+        .sidebar {
+            width: 500px; /* Fixed width for sidebar */
+            padding: 20px;
+            background-color: #f4f4f4;
+            text-align: center;
+            position: fixed; /* Fix the sidebar position */
+            top: 0; /* Align it to the top */
+            right: 0; /* Align it to the right */
+            height: 100%; /* Make it full height */
+            overflow-y: auto; /* Enable vertical scrolling */
+        }
+        .sidebar img, .sidebar p {
+            width: 100%; /* Ensure the content fits the sidebar width */
+            height: auto; /* Maintain aspect ratio */
+            object-fit: cover; /* Ensure the image covers the area without distortion */
+        }
+        .sidebar p {
+            text-align: justify; /* Justify text */
+        }
+</style>
+<script>
+    function showChart() {
+        document.getElementById('chart').innerHTML = '<img src="https://live.staticflickr.com/65535/53996811987_78c1458293_b_d.jpg" alt="Placeholder Image">';
+    }
+    function showFundsPosition() {
+        document.getElementById('chart').innerHTML = '<img src="https://live.staticflickr.com/65535/53998023094_b0e8291ea2_b_d.jpg" alt="Placeholder Image">';
+    }
+    function showSouthAmerica() {
+        document.getElementById('chart').innerHTML = '<img src="https://live.staticflickr.com/65535/54005437599_a86c5649e6_b_d.jpg" alt="Placeholder Image">';
+    }
+    function showPolicyDetails() {
+        document.getElementById('chart').innerHTML = '<p>The policy was introduced to stabilize supply and mitigate the volatility of pork prices in the context that China\'s hog farming industry has reached a high level of economic scale, while the country\'s population and pork consumption are declining.</p>';
+    }
+</script>
+</head>
+<body>
+<div class="container">
+<div class="content">
+<h1>Date: 7/10/2024</h1>
+ 
+            <h2>1. Market view</h2>
+<p>The corn market is expected to remain bearish, with the projected price range revised lower to $380-$480 per ton based on our <a href="#" onclick="showChart()">Fair Value Model</a>’s forecast. This outlook is influenced by comfortable US and global supply levels and fading concerns over Russian wheat supply. The US corn crop is entering the critical pollination phase, and weather conditions will play a crucial role in shaping market expectations. The <a href="#" onclick="showFundsPosition()">funds’ position</a> for corn hit a 10-year record net short (-346k lots).  While the funds’ overall sentiment is bearish, the potential for a short-covering introduces an upside risk to prices in the short term. </p>
+ 
+            <h2>2. How did futures change in the past 30 days</h2>
+ 
+            <p>2nd position futures initially rose by 3.2%, but then plummeted by 13.1%, breaking the 400 support level and entering a new low price range not seen since the 2020-2021 period. </p>
+<h2>3. Major headlines</h2>
+<ul>
+<li><strong></strong>6/23 A flood raised concerns about crop loss in parts of Minnesota, North Dakota, South Dakota, and Iowa</li>
+<li><strong></strong>6/30 USDA reported large stock levels on farm. </li>
+<li><strong></strong>7/9, Hurricane Beryl brought beneficial showers to the corn belt, although there were concerns about flooding in some areas. </li>
+<li><strong></strong>Favorable week over week report for Good/Excellent (G/E) crop ratings </li>
+<li><strong></strong>Concerns about Russian weather have diminished as US wheat appears capable of filling supply gaps. </li>
+<li><strong></strong>The funds continue to extend their net short position to a record level week over week </li>
+</ul>
+ 
+            <h2>4. Focus market updates</h2>
+<ul>
+<li><strong>US Supply:</strong> US new crop production is expected to increase compared to last year due to higher acreage and high expected yield. Favorable crop condition so far has strengthened hopes for a potential yield that is even higher than the record yield of 177.3 bu/acre estimated for crop 2023/24.</li>
+<ul><li>Corn crop is progressing well, with 24% of the crop reaching the silking phase, which is well above both last year and the 5-year average. </li>
+<li>The USDA's reports indicate a high stock-to-use ratio of 13.75%, setting a bearish tone for the market. Farmers are holding 37% more corn than last year, and slow farm sales could lead to higher ending stocks</li>
+<li>The 8-14 day forecast predicts near-normal to above-normal precipitation and near-normal temperatures for most of the Corn Belt. Early July, corn begins to tassel, determining how many individual kernels are pollinated on a single ear of corn. During the remainder of July and into early August, the corn plant will develop those fertilized kernels and determine bushel weight, which is critical for yield. With warm and wet weather conditions, the ear of corn will reach its full potential.</li>
+</ul>
+<li><strong>South America:</strong> Despite earlier concerns over South American production, the market still expects ample global corn supply for 2023/24 and 2024/25. Conab has increased Brazil's 2023/24 crop corn production estimate to 115.84 million metric tons, up from 114.1 million metric tons the prior year.</li>
+<li><strong>EU:</strong> The EU animal feed sector may shift to using more wheat and less corn due to a higher proportion of low-quality wheat in the market.</li>
+<li><strong>China:</strong> China's pig farming industry has regained profitability, and the national hog inventory has shown growth. However, the long-term impact on corn demand remains uncertain due to impact from the revised <a href="#" onclick="showPolicyDetails()">Plan for Regulating Swine Production Capacity</a>, which aims to reduce China's national standard retention level of sows from 41 mil to 39 mil.  </li>
+</ul>
+ 
+            <p><strong>Conclusion:</strong><br>The corn market is poised for continued volatility with a bearish outlook. Key factors to monitor include US weather and crop conditions, South American production, and global demand dynamics. These elements will be crucial for anticipating future price movements.</p>
+<p><a href="#" onclick="showSouthAmerica()">South America</a></p>
+</div>
+<div class="sidebar">
+<h2>CORN MARKET COMMENTARY</h2>
+<div id="chart">
+    <img src="https://live.staticflickr.com/4134/4806634131_a25f9fdd58_b_d.jpg" alt="Placeholder Image">
+</div>
+</div>
+</div>
+</body>
+</html>
