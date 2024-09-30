@@ -43,7 +43,7 @@
         document.getElementById('chart').innerHTML = '<img src="https://live.staticflickr.com/65535/54014504883_b40a106329_b_d.jpg" alt="Fair Value Model">';
     }
     function SND() {
-        document.getElementById('chart').innerHTML = '<img src="https://live.staticflickr.com/65535/54014284726_f91df93981_b_d.jpg" alt="global SND">';
+        document.getElementById('chart').innerHTML = '<img src="https://live.staticflickr.com/65535/54031795874_f43d35d12b_o_d.png" alt="US SND"><img src="https://live.staticflickr.com/65535/54014284726_f91df93981_b_d.jpg" alt="global SND">';
     }
     function FundsPosition() {
         document.getElementById('chart').innerHTML = '<img src="https://live.staticflickr.com/65535/54020414435_07e13b9d06_b_d.jpg" alt="Managed money net position">';
@@ -56,6 +56,12 @@
     }
     function flood() {
         document.getElementById('chart').innerHTML = '<img src="https://live.staticflickr.com/65535/54020237623_1ea7c4266a_b_d.jpg" alt="Precipitation by county">';
+    }
+    function stock() {
+        document.getElementById('chart').innerHTML = '<img src="https://live.staticflickr.com/65535/54031497341_8b4a70a6e9_b_d.jpg" alt="Stock">';
+    }
+    function stock2use() {
+        document.getElementById('chart').innerHTML = '<img src="https://live.staticflickr.com/65535/54031795874_f43d35d12b_o_d.png" alt="Stock to use">';
     }
     function precipitation() {
         document.getElementById('chart').innerHTML = '<p>In early July, corn enters the tasseling stage, where the number of pollinated kernels on each ear is determined. Throughout the rest of July and into early August, the corn plant develops these fertilized kernels and determines the weight per bushel. The amount of rainfall during this development phase plays a critical role in determining the final yield.</p><img src="https://live.staticflickr.com/65535/54014708570_218f2bcd27_o_d.png" alt="Precipitation outlook">';
@@ -77,7 +83,7 @@
 <h1>Date: 7/10/2024</h1>
  
 <h2>1. Market view: <strong>BEARISH</strong></h2>
-<p>The corn market is expected to remain bearish, with the projected price range for Dec24 revised lower to $3.80-$4.60 per bushel (from $4.0-$4.80 in previous report) based on our <a href="#" onclick="fair_value()">Fair Value Model</a>’s forecast. This outlook is influenced by comfortable US and <a href="#" onclick="SND()">global SND</a> and fading concerns over Russian wheat supply. The US corn crop is entering the critical pollination phase, and weather conditions will play a crucial role in shaping market expectations. The <a href="#" onclick="FundsPosition()">funds’ position</a> for corn hit a 10-year record net short (-346k lots). While the funds’ overall sentiment is bearish, the potential for a short-covering introduces an upside risk to prices in the short term.</p>
+<p>The corn market is expected to remain bearish, with the projected price range for Dec24 revised lower to $3.80-$4.60 per bushel (from $4.0-$4.80 in previous report) based on our <a href="#" onclick="fair_value()">Fair Value Model</a>’s forecast. This outlook is influenced by comfortable <a href="#" onclick="SND()">US and global SND</a> and fading concerns over Russian wheat supply. The US corn crop is entering the critical pollination phase, and weather conditions will play a crucial role in shaping market expectations. The <a href="#" onclick="FundsPosition()">funds’ position</a> for corn hit a 10-year record net short (-346k lots). While the funds’ overall sentiment is bearish, the potential for a short-covering introduces an upside risk to prices in the short term.</p>
 <p>The corn market is poised for continued volatility with a bearish outlook. Key factors to monitor include US weather and crop conditions, South American production, and global demand dynamics. These elements will be crucial for anticipating future price movements.</p> 
 
 <h2>2. How did futures change in the past 30 days</h2>
@@ -87,7 +93,7 @@
 
 <ul>
 <li><strong></strong>6/23 <a href="#" onclick="flood()">Flood</a> raised concerns about crop loss in parts of Minnesota, North Dakota, South Dakota, and Iowa.</li>
-<li><strong></strong>6/30 USDA reported large stock levels on farm. </li>
+<li><strong></strong>6/30 USDA reported historically large <a href="#" onclick="stock()">stock</a> levels on farm. </li>
 <li><strong></strong>7/9 Hurricane Beryl brought beneficial showers to the corn belt, although there were concerns about flooding in some areas. </li>
 <li><strong></strong>Favorable week over week report for <a href="#" onclick="crop_condition()">Good/Excellent</a> (G/E) crop ratings </li>
 <li><strong></strong>Concerns about Russian weather have diminished as US wheat appears capable of filling supply gaps. </li>
@@ -98,8 +104,8 @@
 <ul>
 <li><strong>US Supply:</strong> US new crop production is expected to increase compared to last year due to higher acreage and high expected yield. Favorable <a href="#" onclick="crop_condition()">crop condition</a> so far has strengthened hopes for a potential yield that is even higher than the record yield of 177.3 bu/acre estimated for crop 2023/24.</li>
 <ul><li>Corn crop is progressing well, with 24% of the crop reaching the silking phase, which is well above both last year and the 5-year average. </li>
-<li>The USDA's reports indicate a high stock-to-use ratio of 13.75%, setting a bearish tone for the market. Farmers are holding 37% more corn than last year, and slow farm sales could lead to higher ending stocks</li>
-<li>The 8-14 day forecast predicts near-normal to above-normal <a href="#" onclick="precipitation()">precipitation</a> and near-normal <a href="#" onclick="temperatures()">temperatures</a> for most of the Corn belt. </li>
+<li>The USDA's reports indicate a high <a href="#" onclick="stock2use()">stock-to-use</a> ratio of 13.75%, setting a bearish tone for the market. Farmers are holding 37% more corn than last year, and slow farm sales could lead to higher ending stocks</li>
+<li>Non-threatening weather outlook: the 8-14 day forecast predicts near-normal to above-normal <a href="#" onclick="precipitation()">precipitation</a> and near-normal <a href="#" onclick="temperatures()">temperatures</a> for most of the Corn belt. </li>
 </ul>
 <li><strong>South America:</strong> Despite earlier concerns over South American production, the market still expects ample global corn supply for 2023/24 and 2024/25. Conab has increased Brazil's 2023/24 crop corn production estimate to 115.84 million metric tons, up from 114.1 million metric tons the prior year.</li>
 <li><strong>EU:</strong> The EU animal feed sector may shift to using more wheat and less corn due to a higher proportion of low-quality wheat in the market.</li>
